@@ -32,6 +32,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             InventoryTheme {
                 // A surface container using the 'background' color from the theme
+                // Progress
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
