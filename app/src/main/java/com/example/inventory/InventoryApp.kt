@@ -18,17 +18,23 @@
 
 package com.example.inventory
 
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.Icons.Filled
+import androidx.compose.material.icons.filled.Add
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarScrollBehavior
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.example.inventory.R.string
@@ -40,6 +46,29 @@ import com.example.inventory.ui.navigation.InventoryNavHost
 @Composable
 fun InventoryApp(navController: NavHostController = rememberNavController()) {
     InventoryNavHost(navController = navController)
+//
+//    Scaffold(
+//        topBar = {
+//            InventoryTopAppBar(
+//                title = "Inventory",
+//                canNavigateBack = false // Sesuaikan dengan kebutuhan navigasi
+//            )
+//        },
+//        floatingActionButton = {
+//            // Menambahkan FloatingActionButton di bagian bawah kanan
+//            FloatingActionButton(
+//                onClick = {
+//                    // Tindakan yang ingin dilakukan saat FAB diklik
+//                    // Misalnya, membuka screen untuk menambah item baru
+//                }
+//            ) {
+//                Icon(Icons.Filled.Add, contentDescription = "Add Item")
+//            }
+//        }
+//    ) { paddingValues ->
+//        // Konten utama aplikasi, misalnya daftar item inventory
+//        InventoryNavHost(navController = navController, modifier = Modifier.padding(paddingValues))
+//    }
 }
 
 /**
@@ -69,3 +98,9 @@ fun InventoryTopAppBar(
         }
     )
 }
+
+//@Preview(showBackground = true)
+//@Composable
+//fun InventoryTopAppBarPreview(){
+//    InventoryApp()
+//}
