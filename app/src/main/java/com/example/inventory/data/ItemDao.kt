@@ -24,3 +24,11 @@ interface ItemDao {
     @Query("SELECT * from items ORDER BY name ASC")
     fun getAllItems(): Flow<List<Item>>
 }
+
+/**
+ * @Insert berfungsi untuk menambahkan item kedalam database
+ * @Update berfungsi untuk mengubah isi database
+ * @Detele berfungsi untuk menghapus isi database
+ * @Query("SELECT * from items WHERE id = :id") mengambil satu item dari database berdasarkan id
+ * @Query("SELECT * from items ORDER BY name ASC") mengambil semua item dari database
+ */

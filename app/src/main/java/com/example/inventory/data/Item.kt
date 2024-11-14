@@ -18,7 +18,9 @@ package com.example.inventory.data
 
 
 /**
- * Entity data class represents a single row in the database.
+ *  @Entity(tableName = "items") berfungsi untuk memberikan nama pada satu baris tabel yaitu "items".
+ *  Sedangkan @PrimaryKey berfungsi untuk memberikan id primarykey pada class items.
+ *  Dan primary key ini akan otomatis lansung diberikan oleh program
  */
 import androidx.room.Entity
 import androidx.room.PrimaryKey
